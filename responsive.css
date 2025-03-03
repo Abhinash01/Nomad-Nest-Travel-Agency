@@ -1,0 +1,97 @@
+/* Default settings for responsiveness */
+* {
+    box-sizing: border-box;
+}
+
+/* 📌 Responsive Navbar */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .nav img {
+        height: 80px;
+        width: 80px;
+        margin: 10px;
+    }
+
+    .nav .navright ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .nav button {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+}
+
+/* 📌 Responsive Hero Section */
+@media (max-width: 768px) {
+    .hero .heroimg img {
+        height: 50vh; /* Reduce hero image height */
+    }
+
+    .hero .textover {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .hero .textover2 button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+/* 📌 Responsive Cards (Upcoming Journeys) */
+@media (max-width: 1024px) {
+    .jourcards .firstlinecard, 
+    .jourcards .secondlinecard {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .jourcards .firstlinecard .card1,
+    .jourcards .firstlinecard .card2,
+    .jourcards .firstlinecard .card3,
+    .jourcards .secondlinecard .card4,
+    .jourcards .secondlinecard .card5,
+    .jourcards .secondlinecard .card6 {
+        width: 90%; /* Adjusts card size */
+        height: auto;
+    }
+
+    .jourcards .firstlinecard img,
+    .jourcards .secondlinecard img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* 📌 Mobile-Friendly Adjustments */
+@media (max-width: 576px) {
+    .hero .textover {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .jourcards .firstlinecard, 
+    .jourcards .secondlinecard {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .jourcards .firstlinecard .card1,
+    .jourcards .firstlinecard .card2,
+    .jourcards .firstlinecard .card3,
+    .jourcards .secondlinecard .card4,
+    .jourcards .secondlinecard .card5,
+    .jourcards .secondlinecard .card6 {
+        width: 100%;
+    }
+}
